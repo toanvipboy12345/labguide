@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thông tin đăng ký</title>
+</head>
+<body>
+    <h2>Thông tin đăng ký</h2>
+    <form>
+        <table>
+            <tr>
+                <td>Họ và Tên</td>
+                <td><input type="text" name="fullName" value="Nguyễn Phương Hoàng"></td>
+            </tr>
+            <tr>
+                <td>Tên đăng nhập</td>
+                <td><input type="text" name="username" value="nphoang"></td>
+            </tr>
+            <tr>
+                <td>Mật khẩu</td>
+                <td><input type="password" name="password" value="********"></td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td>
+                    <input type="radio" name="gender" value="nam" checked> Nam
+                    <input type="radio" name="gender" value="nu"> Nữ
+                </td>
+            </tr>
+            <tr>
+                <td>Ngôn ngữ lập trình</td>
+                <td>
+                    <input type="checkbox" name="language" value="C#" checked> Ngôn ngữ C#<br>
+                    <input type="checkbox" name="language" value="Java"> Ngôn ngữ Java<br>
+                    <input type="checkbox" name="language" value="PHP"> Ngôn ngữ PHP<br>
+                    <input type="checkbox" name="language" value="other"> Ngôn ngữ khác
+                </td>
+            </tr>
+            <tr>
+                <td>Tỉnh thành</td>
+                <td>
+                    <select name="city">
+                        <option value="hanoi">Hà Nội</option>
+                        <option value="hochiminh">TP. Hồ Chí Minh</option>
+                        <option value="danang">Đà Nẵng</option>
+                        <option value="hue">Huế</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Đăng ký">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

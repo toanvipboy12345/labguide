@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form đăng nhập</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            padding: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            background-color: #91ecec;
+        }
+        td {
+            padding: 8px;
+            text-align: left;
+
+        }
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: fit-content;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #c2c4c4;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title" style="text-align: center; font-weight:bold; color:firebrick">Đăng nhập</div>
+        <form>
+            <table border="1">
+                <tr>
+                    <td><label for="user" name="user">Mã người dùng</label></td>
+                    <td><input type="text" name="user" id="user" placeholder=""></td>
+                </tr>
+                <tr>
+                    <td><label for="pass" name="pass">Mật khẩu</label></td>
+                    <td><input type="text" name="pass" id="pass" placeholder=""></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;"><button>Đồng ý</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

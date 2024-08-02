@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm mới sản phẩm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-container {
+            background-color: #e9e7e7;
+            padding: 20px;
+            width: 800px;
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            width: 100px;
+            margin-right: 10px;
+            color: #333;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .form-group.multi-input {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-group.multi-input label {
+            margin-right: 10px;
+        }
+        .form-group.multi-input input {
+            width: 35%;
+            margin-right: 20px;
+        }
+        .form-group.multi-input input:last-of-type {
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Thêm mới sản phẩm</h2>
+        <form>
+            <div class="form-group">
+                <label for="product-id">Mã sản phẩm</label>
+                <input type="text" id="product-id" name="product-id">
+            </div>
+            <div class="form-group">
+                <label for="product-name">Tên sản phẩm</label>
+                <input type="text" id="product-name" name="product-name">
+            </div>
+            <div class="form-group">
+                <label for="product-url">URL</label>
+                <input type="text" id="product-url" name="product-url">
+            </div>
+            <div class="form-group">
+                <label for="product-category">Loại sản phẩm</label>
+                <select id="product-category" name="product-category">
+                    <option value="phong-khach">PHÒNG KHÁCH</option>
+                </select>
+            </div> 
+            <div class="form-group multi-input">
+                <label for="old-price">Giá cũ</label>
+                <input type="number" id="old-price" name="old-price" value="0">
+                <label for="new-price">Giá mới</label>
+                <input type="number" id="new-price" name="new-price" value="0">
+                <label for="size">Size</label>
+                <input type="text" id="size" name="size">
+            </div> 
+            <div class="form-group">
+                <label for="product-description">Mô tả sản phẩm</label>
+                <textarea id="product-description" name="product-description" rows="4"></textarea>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

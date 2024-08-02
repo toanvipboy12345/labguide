@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            margin: 0;
+        }
+        
+        .container {
+            background-color: #cdcdcd;
+            padding: 25px;
+            width: 450px;
+        }   
+        
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            width: 150px;
+            margin-right: 10px;
+        }
+        
+        .form-group input[type="range"]{
+            width: 70%;
+        }
+        
+        .form-group:last-child {
+            justify-content: center;
+            margin-bottom: 5px;
+        }
+        
+        button {
+            margin-top: 5px;
+            width: 30%;
+            padding: 10px;
+            background-color: #ffffffb4;
+            border-radius: 3px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="slider">Slider</label>
+                <input type="range" id="slider" name="slider" value="0">
+            </div>
+            <div class="form-group">
+                <label for="spinner">Numeric spinner</label>
+                <input type="number" id="spinner" name="spinner" value="80">
+            </div>
+            <div class="form-group">
+                <label for="date-picker">Date picker</label>
+                <input type="date" id="date-picker" name="date-picker" value="2010-10-05">
+            </div>
+            <div class="form-group">
+                <label for="color-picker">Color picker</label>
+                <input type="text" name="color-picker" id="color" placeholder="ff000">
+            </div>
+            <div class="form-group">
+                <label for="text-field">Text field with placeholder</label>
+                <input type="text" id="text-field" name="text-field" placeholder="Insert your text here">
+            </div>
+            <div class="form-group">
+                <label for="url-field">Url field</label>
+                <input type="url" id="url-field" name="url-field" value="http://net.tutsplus.com/">
+            </div>
+            <div class="form-group">
+                <label for="email-field">Email field</label>
+                <input type="email" id="email-field" name="email-field" value="contact@qhinda.net">
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit form</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            width: 600px;
+            height: 90%;
+            margin: 50px auto;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            font-weight: bold;
+            color: #979797;
+        }
+        .form-header {
+            background-color: #d9534f;
+            color: white;
+            padding: 10px;
+
+            text-align: left;
+        }
+        .form-body {
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+        }
+        table td {
+            padding: 10px 0;
+        }
+        input[type="text"], textarea {
+            width: 96%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            height: 60px;
+        }
+        .form-footer {
+            padding: 10px 20px;
+            text-align: right;
+        }
+        .form-footer button {
+            margin: 5px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+        }
+        .form-footer .reset-btn {
+            background-color: #d9534f;
+        }
+        .form-footer .submit-btn {
+            background-color: #5cb85c;
+        }
+    </style>
+    <title>Form Interface</title>
+</head>
+<body>
+
+<div class="form-container">
+    <div class="form-header">
+        Thông tin danh mục chất liệu
+    </div>
+    <form>
+        <div class="form-body">
+            <table>
+                <tr>
+                    <td><label for="title">Tên (Title)</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="title" name="title"></td>
+                </tr>
+                <tr>
+                    <td><label for="seo-keyword">Từ khóa SEO</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="seo-keyword" name="seo-keyword"></td>
+                </tr>
+                <tr>
+                    <td><label for="seo-description">Mô tả SEO</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="seo-description" name="seo-description"></td>
+                </tr>
+                <tr>
+                    <td><label for="notes">Ghi chú</label></td>
+                </tr>
+                <tr>
+                    <td><textarea id="notes" name="notes"></textarea></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        <label>Trạng thái</label>
+                        <input type="radio" id="active" name="status" value="active">
+                        <label for="active">Hoạt động</label>
+                        <input type="radio" id="inactive" name="status" value="inactive">
+                        <label for="inactive">Đang khóa</label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="form-footer">
+            <button type="reset" class="reset-btn">Nhập lại</button>
+            <button type="submit" class="submit-btn">Ghi lại</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

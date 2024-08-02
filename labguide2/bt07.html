@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Liên Hệ</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .container {
+    display: flex;
+
+    padding: 20px;;
+  }
+  .form-container {
+    margin-right: 20px;
+  }
+  .form-container h2 {
+    margin-bottom: 20px;
+    text-align: left;
+    color: #bd5b10dd;
+  }
+  table {
+    width: 130%;
+  }
+  td {
+    padding: 10px 0;
+  }
+  input[type="text"], input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: solid #9e4704dd;
+  }
+  textarea {
+    resize: none;
+  }
+  .submit-btn {
+    background-color: #9e4704dd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .image-container img {
+    max-width: 90%;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="image-container">
+        <img src="06.png" alt="Doctor Image">
+      </div>
+    <div class="form-container">
+      <h2>Liên hệ với chúng tôi</h2>
+      <form>
+        <table>
+          <tr>
+            <td><input type="text" name="name" placeholder="Họ tên"></td>
+          </tr>
+          <tr>
+            <td><input type="email" name="email" placeholder="Email"></td>
+          </tr>
+          <tr>
+            <td><input type="text" name="phone" placeholder="Số điện thoại"></td>
+          </tr>
+          <tr>
+            <td><input type="text" name="address" placeholder="Nội dung"></td>
+          </tr>
+          <tr>
+            <td style="text-align: left;"><button type="submit" class="submit-btn">Gửi thông tin</button></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+   
+  </div>
+</body>
+</html>

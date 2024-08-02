@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form đăng nhập</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            color: rgb(63, 63, 247);
+        }
+        .container {
+            padding: 8px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 40%;
+            
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            background-color: #fdf5b1f8;
+        }
+        td {
+            padding: 8px;
+            text-align: left;
+
+        }
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 90%;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #c2c4c4;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title" style="text-align: center; font-weight:bold; color:rgb(63, 63, 247)"><h2>Đăng ký du lịch</h2></div>
+        <form>
+            <table border="1">
+                <tr>
+                    <td><label for="name" name="name">Họ và tên</label></td>
+                    <td><input type="text" name="name" id="name" placeholder=""></td>
+                </tr>
+                <tr>
+                    <td><label for="diachi" name="diachi">Địa chỉ</label></td>
+                    <td><input type="text" name="diachi" id="diachi" placeholder="" style="width: 60%;"></td>
+                </tr>
+                <tr>
+                    <td><label for="dienthoai" name="dienthoai">Số điện thoại</label></td>
+                    <td><input type="number" name="dienthoai" id="dienthoai" placeholder="" style="width: 45%;"></td>
+                </tr>
+                <tr>
+                    <td><label for="khach" name="khach">Khách Việt Nam</label></td> 
+                    <td><input type="checkbox" name="khach" id="khach" placeholder=""></td>
+                </tr>
+                <tr>
+                    <td><label for="chontour" name="chontour">Chọn tour</label></td> 
+                    <td>
+                        <select name="chontour" id="chontour">
+                            <option value="buonmethuot-gialai-kontum">Buôn mê thuột - Gia lai - Kontum</option>
+                            <optgroup label="Miền Bắc">
+                                <option value="hanoi-halong-sapa">Hà Nội - Hạ Long - Sapa</option>
+                                <option value="hanoi-chuahuong-ninhbinh">Hà Nội - Chùa Hương - Ninh Bình</option>
+                                <option value="hanoi-catba-tuanchau">Hà Nội - Cát Bà - Tuần Châu</option>
+                            </optgroup>
+                            <optgroup label="Miền Trung">
+                                <option value="hue-bachma-danang">Huế - Bạch Mã - Đà Nẵng</option>
+                                <option value="nhatrang-dalat">Nha Trang - Đà Lạt</option>
+                                <option value="buonmethuot-gialai-kontum">Buôn mê thuột - Gia lai - Kontum</option>
+                            </optgroup>
+                            <optgroup label="Miền Nam">
+                                <option value="tphcm-cantho-camau">TP.HCM - Cần Thơ - Cà Mau</option>
+                                <option value="tphcm-mytho">TP.HCM - Mỹ Tho</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><label for="phuongtien" name="phuongtien">Phương tiện</label></td>
+                    <td>
+                        <input type="radio" id="maybay" name="phuongtien" value="maybay">
+                        <label for="maybay">Máy bay</label>
+                        <input type="radio" id="oto" name="phuongtien" value="oto">
+                        <label for="oto">Xe ô tô</label>
+                    </td>
+                </tr>
+                <tr>    
+                    <td colspan="2" style="text-align: center;">
+                        <fieldset style="width: 300px; margin: 0 auto;">
+                            <legend style="color: brown;">Số lượng đoàn khách</legend>
+                            <label for="nguoilon" style="color: rgb(63, 63, 247);">Người lớn</label>
+                            <input type="number" id="nguoilon" name="nguoilon" value="6" style="width: 50px; text-align: center; margin-right: 20px;">
+                            <label for="treem" style="color: rgb(63, 63, 247);">Trẻ em</label>
+                            <input type="number" id="treem" name="treem" value="4" style="width: 50px; text-align: center;">
+                        </fieldset>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><label for="ghichu" name="ghichu">Ghi chú</label></td>
+                    <td>
+                       <textarea name="ghichu" id="ghichu" rows="2" cols="35" style="text-align: left;"></textarea>
+                    </td>
+                </tr>
+                
+                
+                <tr>
+                    <td colspan="2" style="text-align: center;"><button>Đồng ý</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;color:gold">Bạn đã đăng ký thành công!!!</td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

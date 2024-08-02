@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+        .header-left select {
+            padding: 5px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
+        .header-right input {
+            padding: 5px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        .header-right button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dee2e6;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #e9ecef;
+        }
+        .status {
+            color: green;
+        }
+        .actions button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .actions .view {
+            color: #17a2b8;
+        }
+        .actions .edit {
+            color: #ffc107;
+        }
+        .actions .delete {
+            color: #dc3545;
+        }
+        .summary {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .pagination {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                <select>
+                    <option value="15">15</option>
+                </select>
+            </div>
+            <div class="header-right">
+                <input type="text" placeholder="Nhập tiêu đề tìm kiếm -> Nhấn Enter">
+                <button>+ Thêm mới</button>
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Mã</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Giá cũ</th>
+                    <th>Giá mới</th>
+                    <th>Ngày cập nhật</th>
+                    <th>Lượt xem</th>
+                    <th>Trạng thái</th>
+                    <th>Tác vụ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>P002</td>
+                    <td>Bàn uống nước</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>26/8/2020</td>
+                    <td>0</td>
+                    <td class="status">Hiển thị</td>
+                    <td class="actions">
+                        <button class="view">🔍</button>
+                        <button class="edit">✏️</button>
+                        <button class="delete">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>P012</td>
+                    <td>Gương châu âu</td>
+                    <td>25990000</td>
+                    <td>22990000</td>
+                    <td>10/8/2020</td>
+                    <td>0</td>
+                    <td class="status">Hiển thị</td>
+                    <td class="actions">
+                        <button class="view">🔍</button>
+                        <button class="edit">✏️</button>
+                        <button class="delete">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>P011</td>
+                    <td>Kệ đầu giường</td>
+                    <td>26990000</td>
+                    <td>23990000</td>
+                    <td>3/8/2020</td>
+                    <td>0</td>
+                    <td class="status">Hiển thị</td>
+                    <td class="actions">
+                        <button class="view">🔍</button>
+                        <button class="edit">✏️</button>
+                        <button class="delete">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>P010</td>
+                    <td>Gương gỗ</td>
+                    <td>20990000</td>
+                    <td>19990000</td>
+                    <td>31/7/2020</td>
+                    <td>0</td>
+                    <td class="status">Hiển thị</td>
+                    <td class="actions">
+                        <button class="view">🔍</button>
+                        <button class="edit">✏️</button>
+                        <button class="delete">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>P009</td>
+                    <td>Tủ quần áo</td>
+                    <td>15990000</td>
+                    <td>0</td>
+                    <td>31/7/2020</td>
+                    <td>0</td>
+                    <td class="status">Hiển thị</td>
+                    <td class="actions">
+                        <button class="view">🔍</button>
+                        <button class="edit">✏️</button>
+                        <button class="delete">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>P007</td>
+                    <td>Kệ đầu giường</td>
+                    <td>15990000</td>
+                    <td>0</td>
+                    <td>31/7/2020</td>
+                    <td>0</td>
+                    <td class="status">Hiển thị</td>
+                    <td class="actions">
+                        <button class="view">🔍</button>
+                        <button class="edit">✏️</button>
+                        <button class="delete">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>P008</td>
+                    <td>Kệ Tivi</td>
+                    <td>15990000</td>
+                    <td>0</td>
+                    <td>31/7/2020</td>
+                    <td>0</td>
+                    <td class="status">Hiển thị</td>
+                    <td class="actions">
+                        <button class="view">🔍</button>
+                        <button class="edit">✏️</button>
+                        <button class="delete">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>P006</td>
+                    <td>BÀN UỐNG NƯỚC 2</td>
+                    <td>15990000</td>
+                    <td>0</td>
+                    <td>31/7/2020</td>
+                    <td>0</td>
+                    <td class="status">Hiển thị</td>
+                    <td class="actions">
+                        <button class="view">🔍</button>
+                        <button class="edit">✏️</button>
+                        <button class="delete">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>P003</td>
+                    <td>Gương khổ lớn thiết kế sang trọng hiện đại</td>
+                    <td>15990000</td>
+                    <td>0</td>
+                    <td>28/7/2020</td>
+                    <td>0</td>
+                    <td class="status">Hiển thị</td>
+                    <td class="actions">
+                        <button class="view">🔍</button>
+                        <button class="edit">✏️</button>
+                        <button class="delete">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>P005</td>
+                    <td>Bàn ăn nhỏ bếp sang trọng</td>
+                    <td>12990000</td>
+                    <td>9990000</td>
+                    <td>27/7/2020</td>
+                    <td>0</td>
+                    <td class="status">Hiển thị</td>
+                    <td class="actions">
+                        <button class="view">🔍</button>
+                        <button class="edit">✏️</button>
+                        <button class="delete">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>P001</td>
+                    <td>Bàn tiếp khách</td>
+                    <td>12990000</td>
+                    <td>9990000</td>
+                    <td>27/7/2020</td>
+                    <td>0</td>
+                    <td class="status">Hiển thị</td>
+                    <td class="actions">
+                        <button class="view">🔍</button>
+                        <button class="edit">✏️</button>
+                        <button class="delete">🗑️</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="summary">
+            <div>Tổng số có: <strong>11</strong> sản phẩm</div>
+        </div>
+        <div class="pagination">
+            <span>Trang 1 / 1</span>
+        </div>
+    </div>
+</body>
+</html>

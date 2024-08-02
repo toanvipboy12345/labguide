@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .active {
+            color: green;
+        }
+        .edit-btn, .delete-btn, .detail-btn {
+            cursor: pointer;
+        }
+        .edit-btn {
+            color: blue;
+        }
+        .delete-btn {
+            color: red;
+        }
+        .detail-btn {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Bài 01</h1>
+<table>
+    <tr>
+        <th>STT</th>
+        <th>Tên danh mục</th>
+        <th>Ngày sửa</th>
+        <th>Thứ tự</th>
+        <th>Trạng thái</th>
+        <th>Tác vụ</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>PHÒNG KHÁCH</td>
+        <td>7/8/2020</td>
+        <td>1</td>
+        <td class="active">Hoạt động</td>
+        <td>
+            <span class="edit-btn">✏️</span>
+            <span class="delete-btn">🗑️</span>
+            <span class="detail-btn">🔍</span>
+        </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>PHÒNG NGỦ</td>
+        <td>7/8/2020</td>
+        <td>2</td>
+        <td class="active">Hoạt động</td>
+        <td>
+            <span class="edit-btn">✏️</span>
+            <span class="delete-btn">🗑️</span>
+            <span class="detail-btn">🔍</span>
+        </td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>PHÒNG BẾP</td>
+        <td>7/8/2020</td>
+        <td>3</td>
+        <td class="active">Hoạt động</td>
+        <td>
+            <span class="edit-btn">✏️</span>
+            <span class="delete-btn">🗑️</span>
+            <span class="detail-btn">🔍</span>
+        </td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>PHÒNG TẮM</td>
+        <td>7/8/2020</td>
+        <td>4</td>
+        <td class="active">Hoạt động</td>
+        <td>
+            <span class="edit-btn">✏️</span>
+            <span class="delete-btn">🗑️</span>
+            <span class="detail-btn">🔍</span>
+        </td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>TRẺ EM</td>
+        <td>7/8/2020</td>
+        <td>5</td>
+        <td class="active">Hoạt động</td>
+        <td>
+            <span class="edit-btn">✏️</span>
+            <span class="delete-btn">🗑️</span>
+            <span class="detail-btn">🔍</span>
+        </td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>VĂN PHÒNG</td>
+        <td>7/8/2020</td>
+        <td>6</td>
+        <td class="active">Hoạt động</td>
+        <td>
+            <span class="edit-btn">✏️</span>
+            <span class="delete-btn">🗑️</span>
+            <span class="detail-btn">🔍</span>
+        </td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>CẦU THANG</td>
+        <td>7/8/2020</td>
+        <td>7</td>
+        <td class="active">Hoạt động</td>
+        <td>
+            <span class="edit-btn">✏️</span>
+            <span class="delete-btn">🗑️</span>
+            <span class="detail-btn">🔍</span>
+        </td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>TRANG TRÍ</td>
+        <td>7/8/2020</td>
+        <td>8</td>
+        <td class="active">Hoạt động</td>
+        <td>
+            <span class="edit-btn">✏️</span>
+            <span class="delete-btn">🗑️</span>
+            <span class="detail-btn">🔍</span>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="6">Tổng số có: <strong>8</strong> danh mục</td>
+    </tr>
+</table>
+<hr>
+
+<h1>Bài 02</h1>
+
+<table>
+    <tr>
+        <th>STT</th>
+        <th>Tên chất liệu</th>
+        <th>Ghi chú</th>
+        <th>Ngày sửa</th>
+        <th>Trạng thái</th>
+        <th>Tác vụ</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Gỗ sồi</td>
+        <td>Gỗ sồi</td>
+        <td>20/7/2020</td>
+        <td class="active">Hoạt động</td>
+        <td>
+            <span class="edit-btn">✏️</span>
+            <span class="delete-btn">🗑️</span>
+            <span class="detail-btn">🔍</span>
+        </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Gỗ lim</td>
+        <td>Gỗ lim</td>
+        <td>20/7/2020</td>
+        <td class="active">Hoạt động</td>
+        <td>
+            <span class="edit-btn">✏️</span>
+            <span class="delete-btn">🗑️</span>
+            <span class="detail-btn">🔍</span>
+        </td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Gỗ xoan đào</td>
+        <td>Gỗ xoan đào</td>
+        <td>20/7/2020</td>
+        <td class="active">Hoạt động</td>
+        <td>
+            <span class="edit-btn">✏️</span>
+            <span class="delete-btn">🗑️</span>
+            <span class="detail-btn">🔍</span>
+        </td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Gỗ mít</td>
+        <td>Gỗ mít</td>
+        <td>20/7/2020</td>
+        <td class="active">Hoạt động</td>
+        <td>
+            <span class="edit-btn">✏️</span>
+            <span class="delete-btn">🗑️</span>
+            <span class="detail-btn">🔍</span>
+        </td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Gỗ lát</td>
+        <td>Gỗ lát</td>
+        <td>24/7/2020</td>
+        <td class="active">Hoạt động</td>
+        <td>
+            <span class="edit-btn">✏️</span>
+            <span class="delete-btn">🗑️</span>
+            <span class="detail-btn">🔍</span>
+        </td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>nâu vân gỗ</td>
+        <td>nâu vân gỗ</td>
+        <td>31/7/2020</td>
+        <td class="active">Hoạt động</td>
+        <td>
+            <span class="edit-btn">✏️</span>
+            <span class="delete-btn">🗑️</span>
+            <span class="detail-btn">🔍</span>
+        </td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Trắng sữa</td>
+        <td>Trắng sữa</td>
+        <td>31/7/2020</td>
+        <td class="active">Hoạt động</td>
+        <td>
+            <span class="edit-btn">✏️</span>
+            <span class="delete-btn">🗑️</span>
+            <span class="detail-btn">🔍</span>
+        </td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>gỗ công nghiệp</td>
+        <td>null</td>
+        <td>10/8/2020</td>
+        <td class="active">Hoạt động</td>
+        <td>
+            <span class="edit-btn">✏️</span>
+            <span class="delete-btn">🗑️</span>
+            <span class="detail-btn">🔍</span>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="6">Tổng số có: <strong>8</strong> chất liệu</td>
+    </tr>
+</table>
+
+</body>
+</html>
